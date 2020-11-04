@@ -1,0 +1,560 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.2">
+
+  
+  <meta name="keywords" content="php" />
+
+
+<link rel="canonical" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/">
+
+
+
+  <title>
+php语法和变量 |
+Yume Shoka = Hexo</title>
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">php语法和变量
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2020-11-04 23:05:51">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-11-04T23:05:51+08:00">2020-11-04</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main id="main">
+      <div class="inner">
+        <div id="content" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="zdc">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="PHP-语法"><a href="#PHP-语法" class="headerlink" title="PHP 语法"></a>PHP 语法</h1><p>PHP 脚本在服务器上执行，然后将纯 HTML 结果发送回浏览器。</p>
+<p>————————————————————————————————</p>
+<p>PHP 脚本可以放在文档中的任何位置。</p>
+<p>PHP 脚本以 <strong><?php** 开始，以 **?></strong> 结束：</p>
+<p><code>&lt;?php // PHP 代码 ?&gt;</code></p>
+<p>PHP 文件的默认文件扩展名是 “.php”。</p>
+<p>PHP 文件通常包含 HTML 标签和一些 PHP 脚本代码。</p>
+<p>下面，我们提供了一个简单的 PHP 文件实例，它可以向浏览器输出文本 “Hello World!”：</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>`<!DOCTYPE html></p>
+<html>
+<body>
+
+<h1>My first PHP page</h1>
+
+<?php
+echo "Hello World!";
+?>
+
+</body>
+</html>`
+
+<p>PHP 中的每个代码行都必须以分号结束。分号是一种分隔符，用于把指令集区分开来。</p>
+<p>通过 PHP，有两种在浏览器输出文本的基础指令：<strong>echo</strong> 和 <strong>print</strong>。</p>
+<h2 id="PHP-中的注释"><a href="#PHP-中的注释" class="headerlink" title="PHP 中的注释"></a>PHP 中的注释</h2><p>`<!DOCTYPE html></p>
+<html>
+<body>
+
+<p>**&lt;?php<br>// 这是 PHP 单行注释</p>
+<p>/*<br>这是<br>PHP 多行<br>注释<br>*/<br>?&gt;**</p>
+</body>
+</html>`
+
+<p><strong>// 这是 PHP 单行注释</strong></p>
+<p><strong>/*</strong><br><strong>这是</strong><br><strong>PHP 多行</strong><br><strong>注释</strong><br>*<strong>/</strong></p>
+<h1 id="PHP-变量"><a href="#PHP-变量" class="headerlink" title="PHP 变量"></a>PHP 变量</h1><p>变量是用于存储信息的”容器”：</p>
+<h2 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php </code></p>
+<p><code>$x=5;</code></p>
+<p><code> $y=6;</code> </p>
+<p><code>$z=$x+$y;</code> </p>
+<p><code>echo $z;</code></p>
+<p><code> ?&gt;</code></p>
+<h2 id="与代数类似"><a href="#与代数类似" class="headerlink" title="与代数类似"></a>与代数类似</h2><p>x=5<br>y=6<br>z=x+y</p>
+<p>在代数中，我们使用字母（如 x），并给它赋值（如 5）。</p>
+<p>从上面的表达式 z=x+y ，我们可以计算出 z 的值为 11。</p>
+<p>在 PHP 中，这些字母被称为<strong>变量</strong>。</p>
+<h2 id="PHP-变量-1"><a href="#PHP-变量-1" class="headerlink" title="PHP 变量"></a>PHP 变量</h2><p>与代数类似，可以给 PHP 变量赋予某个值（x=5）或者表达式（z=x+y）。</p>
+<p>变量可以是很短的名称（如 x 和 y）或者更具描述性的名称（如 age、carname、totalvolume）。</p>
+<p>PHP 变量规则：</p>
+<ul>
+<li>变量以 $ 符号开始，后面跟着变量的名称</li>
+<li>变量名必须以字母或者下划线字符开始</li>
+<li>变量名只能包含字母数字字符以及下划线（A-z、0-9 和 _ ）</li>
+<li>变量名不能包含空格</li>
+<li>变量名是区分大小写的（$y 和 $Y 是两个不同的变量）</li>
+</ul>
+<p>注意！！！ PHP 语句和 PHP 变量都是区分大小写的。</p>
+<h2 id="创建（声明）PHP-变量"><a href="#创建（声明）PHP-变量" class="headerlink" title="创建（声明）PHP 变量"></a>创建（声明）PHP 变量</h2><p>PHP 没有声明变量的命令。</p>
+<p>变量在您第一次赋值给它的时候被创建：</p>
+<h2 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code></p>
+<p><code>$txt=&quot;Hello world!&quot;;</code> </p>
+<p><code>$x=5;</code></p>
+<p><code> $y=10.5;</code> </p>
+<p><code> ?&gt;</code></p>
+<p>在上面的语句执行中，变量 <strong>txt</strong> 将保存值 <strong>Hello world!**，且变量 **x</strong> 将保存值 <strong>5</strong>。</p>
+<p><strong>注释：</strong>当您赋一个文本值给变量时，请在文本值两侧加上引号。</p>
+<h2 id="PHP-是一门弱类型语言"><a href="#PHP-是一门弱类型语言" class="headerlink" title="PHP 是一门弱类型语言"></a>PHP 是一门弱类型语言</h2><p>在上面的实例中，我们注意到，不必向 PHP 声明该变量的数据类型。</p>
+<p>PHP 会根据变量的值，自动把变量转换为正确的数据类型。</p>
+<p>在强类型的编程语言中，我们必须在使用变量前先声明（定义）变量的类型和名称。</p>
+<h2 id="PHP-变量作用域"><a href="#PHP-变量作用域" class="headerlink" title="PHP 变量作用域"></a>PHP 变量作用域</h2><p>变量的作用域是脚本中变量可被引用/使用的部分。</p>
+<p>PHP 有四种不同的变量作用域：</p>
+<ul>
+<li>local</li>
+<li>global</li>
+<li>static</li>
+<li>parameter</li>
+</ul>
+<h2 id="局部和全局作用域"><a href="#局部和全局作用域" class="headerlink" title="局部和全局作用域"></a>局部和全局作用域</h2><p>在所有函数外部定义的变量，拥有全局作用域。除了函数外，全局变量可以被脚本中的任何部分访问，要在一个函数中访问一个全局变量，需要使用 global 关键字。</p>
+<p>在 PHP 函数内部声明的变量是局部变量，仅能在函数内部访问：</p>
+<h2 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h2><p>`&lt;?php<br>$x=5; // 全局变量</p>
+<p>function myTest()<br>{<br>  $y=10; // 局部变量<br>  echo “<p>测试函数内变量:<p>“;<br>  echo “变量 x 为: $x”;<br>  echo “<br>“;<br>  echo “变量 y 为: $y”;<br>} </p>
+<p>myTest();</p>
+<p>echo “<p>测试函数外变量:<p>“;<br>echo “变量 x 为: $x”;<br>echo “<br>“;<br>echo “变量 y 为: $y”;<br>?&gt;`</p>
+<p>在以上实例中 myTest() 函数定义了 $x 和 $y 变量。 $x 变量在函数外声明，所以它是全局变量 ， $y 变量在函数内声明所以它是局部变量。</p>
+<p>当我们调用myTest()函数并输出两个变量的值, 函数将会输出局部变量 $y 的值，但是不能输出 $x 的值，因为 $x 变量在函数外定义，无法在函数内使用，如果要在一个函数中访问一个全局变量，需要使用 global 关键字。</p>
+<p>然后我们在myTest()函数外输出两个变量的值，函数将会输出全局变量 $x 的值，但是不能输出 $y 的值，因为 $y 变量在函数中定义，属于局部变量。</p>
+<p><u>注意！！</u>你可以在不同函数中使用相同的变量名称，因为这些函数内定义的变量名是局部变量，只作用于该函数内。</p>
+<h2 id="PHP-global-关键字"><a href="#PHP-global-关键字" class="headerlink" title="PHP global 关键字"></a>PHP global 关键字</h2><p>global 关键字用于函数内访问全局变量。</p>
+<p>在函数内调用函数外定义的全局变量，我们需要在函数中的变量前加上 global 关键字：</p>
+<h2 id="实例-4"><a href="#实例-4" class="headerlink" title="实例"></a>实例</h2><p>‘&lt;?php</p>
+<p> $x=5; </p>
+<p>$y=10;</p>
+<p>  function myTest()</p>
+<p> {    global $x,$y; </p>
+<p>   $y=$x+$y; </p>
+<p>}  </p>
+<p>myTest();</p>
+<p> echo $y; // 输出 15</p>
+<p> ?&gt;’</p>
+<p>PHP 将所有全局变量存储在一个名为 $GLOBALS[<em>index</em>] 的数组中。 <em>index</em> 保存变量的名称。这个数组可以在函数内部访问，也可以直接用来更新全局变量。上面的实例可以写成这样：</p>
+<p><code>&lt;?php </code></p>
+<p><code>$x=5;</code></p>
+<p><code>$y=10;</code> </p>
+<p><code>function myTest()</code> </p>
+<p><code>&#123;   </code></p>
+<p><code>$GLOBALS[&#39;y&#39;]=$GLOBALS[&#39;x&#39;]+$GLOBALS[&#39;y&#39;];</code></p>
+<p><code>&#125;</code> </p>
+<p><code>  myTest();</code> </p>
+<p><code> echo $y;</code> </p>
+<p><code> ?&gt;</code></p>
+<h2 id="Static-作用域"><a href="#Static-作用域" class="headerlink" title="Static 作用域"></a>Static 作用域</h2><p>当一个函数完成时，它的所有变量通常都会被删除。然而，有时候您希望某个局部变量不要被删除。</p>
+<p>要做到这一点，请在您第一次声明变量时使用 <strong>static</strong> 关键字：</p>
+<p><code>&lt;?php</code></p>
+<p><code> function myTest()</code> </p>
+<p><code>&#123; </code> </p>
+<p><code> static $x=0;</code>  </p>
+<p><code>  echo $x;</code>   </p>
+<p><code>  $x++; </code>   </p>
+<p><code>  echo PHP_EOL;    // 换行符</code>  </p>
+<p><code>&#125;</code> </p>
+<p><code>myTest(); </code></p>
+<p><code>myTest();</code></p>
+<p><code> myTest();</code> </p>
+<p><code> ?&gt;</code></p>
+<p>然后，每次调用该函数时，该变量将会保留着函数前一次被调用时的值。</p>
+<p><strong>注释：</strong>该变量仍然是函数的局部变量。</p>
+
+      <div class="tags">
+          <a href="/tags/php/" rel="tag"><i class="ic i-tag"></i> php</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2020-11-04 23:29:12" itemprop="dateModified" datetime="2020-11-04T23:29:12+08:00">2020-11-04</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="zdc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="zdc Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="zdc PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>zdc <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">http://example.com/2020/11/04/php语法/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli9lfebj20zk0m84qp.jpg" title="html简介">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>html简介</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">PHP 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">My first PHP page</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A"><span class="toc-number">2.1.</span> <span class="toc-text">PHP 中的注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">PHP 变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-number">3.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E%E4%BB%A3%E6%95%B0%E7%B1%BB%E4%BC%BC"><span class="toc-number">3.2.</span> <span class="toc-text">与代数类似</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F-1"><span class="toc-number">3.3.</span> <span class="toc-text">PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%EF%BC%88%E5%A3%B0%E6%98%8E%EF%BC%89PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">3.4.</span> <span class="toc-text">创建（声明）PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-2"><span class="toc-number">3.5.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%98%AF%E4%B8%80%E9%97%A8%E5%BC%B1%E7%B1%BB%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="toc-number">3.6.</span> <span class="toc-text">PHP 是一门弱类型语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.7.</span> <span class="toc-text">PHP 变量作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%92%8C%E5%85%A8%E5%B1%80%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.8.</span> <span class="toc-text">局部和全局作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-3"><span class="toc-number">3.9.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-global-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">3.10.</span> <span class="toc-text">PHP global 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-4"><span class="toc-number">3.11.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Static-%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.12.</span> <span class="toc-text">Static 作用域</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="zdc"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">zdc</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">4</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">1</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+        
+  <li class="item dropdown">
+    <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2020</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">zdc @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2020/11/04/php语法/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.2"></script>
+
+
+
+
+</body>
+</html>
