@@ -27,12 +27,12 @@
   <meta name="keywords" content="php" />
 
 
-<link rel="canonical" href="http://example.com/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/">
+<link rel="canonical" href="http://example.com/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
 
 
 
   <title>
-echo和print语句 |
+php数据类型 |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,16 +60,16 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">echo和print语句
+  <h1 itemprop="name headline">php数据类型
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2020-11-05 22:18:33">
+  <span class="item" title="Created: 2020-11-07 21:27:28">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2020-11-05T22:18:33+08:00">2020-11-05</time>
+    <time itemprop="dateCreated datePublished" datetime="2020-11-07T21:27:28+08:00">2020-11-07</time>
   </span>
 </div>
 
@@ -102,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -136,7 +136,7 @@ Yume Shoka = Hexo</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -151,62 +151,97 @@ Yume Shoka = Hexo</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="PHP-5-echo-和-print-语句"><a href="#PHP-5-echo-和-print-语句" class="headerlink" title="PHP 5 echo 和 print 语句"></a>PHP 5 echo 和 print 语句</h1><p>在 PHP 中有两个基本的输出方式： echo 和 print。</p>
-<h2 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h2><p>echo 和 print 区别:</p>
-<ul>
-<li>echo - 可以输出一个或多个字符串</li>
-<li>print - 只允许输出一个字符串，返回值总为 1</li>
-</ul>
-<p><strong>提示：</strong>echo 输出的速度比 print 快， echo 没有返回值，print有返回值1。</p>
-<h2 id="PHP-echo-语句"><a href="#PHP-echo-语句" class="headerlink" title="PHP echo 语句"></a>PHP echo 语句</h2><p>echo 是一个语言结构，使用的时候可以不用加括号，也可以加上括号： echo 或 echo()。</p>
+    <p>String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）。</p>
+<h2 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h2><p>一个字符串是一串字符的序列，就像 “Hello world!”。</p>
+<p>你可以将任何文本放在单引号和双引号中：</p>
 <h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php </code></p>
-<p><code>echo &quot;&lt;h2&gt;PHP 很有趣!&lt;/h2&gt;&quot;;</code></p>
-<p><code> echo &quot;Hello world!&lt;br&gt;&quot;;</code> </p>
-<p><code> echo &quot;我要学 PHP!&lt;br&gt;&quot;;</code> </p>
-<p><code> echo &quot;这是一个&quot;, &quot;字符串，&quot;, &quot;使用了&quot;, &quot;多个&quot;, &quot;参数。&quot;;</code> </p>
-<p><code> ?&gt;</code></p>
-<h2 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php </code></p>
-<p><code>$txt1=&quot;学习 PHP&quot;;</code></p>
-<p><code>$txt2=&quot;RUNOOB.COM&quot;;</code> </p>
-<p><code>$cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</code></p>
-<p><code>  echo $txt1;</code>  </p>
+<p><code>$x = &quot;Hello world!&quot;;</code> </p>
+<p><code>echo $x;</code></p>
 <p><code>echo &quot;&lt;br&gt;&quot;;</code> </p>
-<p><code>echo &quot;在 $txt2 学习 PHP &quot;; </code></p>
+<p><code> $x = &#39;Hello world!&#39;;</code> </p>
+<p><code> echo $x;</code> </p>
+<p><code> ?&gt;</code></p>
+<h2 id="PHP-整型"><a href="#PHP-整型" class="headerlink" title="PHP 整型"></a>PHP 整型</h2><p>整数是一个没有小数的数字。</p>
+<p>整数规则:</p>
+<ul>
+<li>整数必须至少有一个数字 (0-9)</li>
+<li>整数不能包含逗号或空格</li>
+<li>整数是没有小数点的</li>
+<li>整数可以是正数或负数</li>
+<li>整型可以用三种格式来指定：十进制， 十六进制（ 以 0x 为前缀）或八进制（前缀为 0）。</li>
+</ul>
+<p>在以下实例中我们将测试不同的数字。</p>
+<p>PHP <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9waHAvcGhwLXZhcl9kdW1wLWZ1bmN0aW9uLmh0bWw=">var_dump() </span>函数返回变量的数据类型和值：</p>
+<h2 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code></p>
+<p><code>  $x = 5985;</code>  </p>
+<p><code>var_dump($x);</code> </p>
 <p><code>echo &quot;&lt;br&gt;&quot;; </code></p>
-<p><code>echo &quot;我车的品牌是 &#123;$cars[0]&#125;&quot;; </code></p>
-<p>?&gt;</p>
-<h2 id="PHP-print-语句"><a href="#PHP-print-语句" class="headerlink" title="PHP print 语句"></a>PHP print 语句</h2><p>print 同样是一个语言结构，可以使用括号，也可以不使用括号： print 或 print()。</p>
-<h2 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code></p>
-<p><code> print &quot;&lt;h2&gt;PHP 很有趣!&lt;/h2&gt;&quot;;</code> </p>
-<p><code> print &quot;Hello world!&lt;br&gt;&quot;;</code> </p>
-<p><code> print &quot;我要学习 PHP!&quot;;</code> </p>
+<p><code>$x = -345; // 负数</code> </p>
+<p><code> var_dump($x);</code> </p>
+<p><code>echo &quot;&lt;br&gt;&quot;;</code> </p>
+<p><code> $x = 0x8C; // 十六进制数</code> </p>
+<p><code> var_dump($x);</code> </p>
+<p><code> echo &quot;&lt;br&gt;&quot;;</code> </p>
+<p><code> $x = 047; // 八进制数</code> </p>
+<p><code> var_dump($x);</code> </p>
 <p><code> ?&gt;</code></p>
+<h2 id="PHP-浮点型"><a href="#PHP-浮点型" class="headerlink" title="PHP 浮点型"></a>PHP 浮点型</h2><p>浮点数是带小数部分的数字，或是指数形式。</p>
+<p>在以下实例中我们将测试不同的数字。 PHP var_dump() 函数返回变量的数据类型和值：</p>
+<h2 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php  </code></p>
+<p><code>$x = 10.365;</code></p>
+<p><code>var_dump($x);</code> </p>
+<p><code>echo &quot;&lt;br&gt;&quot;;</code></p>
+<p><code> $x = 2.4e3;</code>  </p>
+<p><code>var_dump($x);</code></p>
+<p><code> echo &quot;&lt;br&gt;&quot;;</code> </p>
+<p><code>  $x = 8E-5;</code>  </p>
+<p><code>var_dump($x); </code></p>
+<p><code>?&gt;</code></p>
+<h2 id="PHP-布尔型"><a href="#PHP-布尔型" class="headerlink" title="PHP 布尔型"></a>PHP 布尔型</h2><p>布尔型可以是 TRUE 或 FALSE。</p>
+<p>$x=true;<br>$y=false;</p>
+<p>布尔型通常用于条件判断。</p>
+<h2 id="PHP-数组"><a href="#PHP-数组" class="headerlink" title="PHP 数组"></a>PHP 数组</h2><p>数组可以在一个变量中存储多个值。</p>
+<p>在以下实例中创建了一个数组， 然后使用 PHP var_dump() 函数返回数组的数据类型和值：</p>
 <h2 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php </code></p>
-<p><code>$txt1=&quot;学习 PHP&quot;;</code></p>
-<p><code>$txt2=&quot;RUNOOB.COM&quot;;</code> </p>
-<p><code>$cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;); </code></p>
-<p><code>print $txt1;</code> </p>
-<p><code>print &quot;&lt;br&gt;&quot;;</code></p>
-<p><code>print &quot;在 $txt2 学习 PHP &quot;;</code> </p>
-<p><code>print &quot;&lt;br&gt;&quot;; </code></p>
-<p><code>print &quot;我车的品牌是 &#123;$cars[0]&#125;&quot;;</code></p>
+<p><code> $cars=array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</code> </p>
+<p><code> var_dump($cars);</code> </p>
+<p><code>?&gt;</code></p>
+<h2 id="PHP-对象"><a href="#PHP-对象" class="headerlink" title="PHP 对象"></a>PHP 对象</h2><p>对象数据类型也可以用于存储数据。</p>
+<p>在 PHP 中，对象必须声明。</p>
+<p>首先，你必须使用class关键字声明类对象。类是可以包含属性和方法的结构。</p>
+<p>然后我们在类中定义数据类型，然后在实例化的类中使用数据类型：</p>
+<h2 id="实例-4"><a href="#实例-4" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php </code></p>
+<p><code>class Car</code></p>
+<p> <code>&#123; </code> </p>
+<p> <code>var $color; </code></p>
+<p><code>function __construct($color=&quot;green&quot;) &#123; </code> </p>
+<p><code> $this-&gt;color = $color; </code>  </p>
+<p><code>&#125;</code></p>
+<p><code> function what_color() &#123;</code>  </p>
+<p><code>  return $this-&gt;color;</code>   </p>
+<p><code>&#125;</code> </p>
+<p><code>&#125; </code></p>
+<p><code>?&gt;</code></p>
+<h2 id="PHP-NULL-值"><a href="#PHP-NULL-值" class="headerlink" title="PHP NULL 值"></a>PHP NULL 值</h2><p>NULL 值表示变量没有值。NULL 是数据类型为 NULL 的值。</p>
+<p>NULL 值指明一个变量是否为空值。 同样可用于数据空值和NULL值的区别。</p>
+<p>可以通过设置变量值为 NULL 来清空变量数据：</p>
+<h2 id="实例-5"><a href="#实例-5" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code></p>
+<p><code> $x=&quot;Hello world!&quot;;</code> </p>
+<p><code> $x=null;</code> </p>
+<p><code> var_dump($x);</code> </p>
 <p><code> ?&gt;</code></p>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>echo 是语法结构，也就是关键字，不是函数。使用的时候不用加括号，加上也可以。显示多个值的时候可以用逗号隔开。只支持基本类型，布尔型除外，echo true的时候显示1，echo false的时候啥都没有。</p>
-<p>print 和 echo 基本一致。但是print 不支持逗号分隔多个显示变量的语法。</p>
-<p>print_r 是函数，不仅可以打印变量的的值，还能显示变量类型，而且也可以显示数组和对象这样复杂的变量类型。print_r() 将把数组的指针移到最后边。使用 reset() 可让指针回到开始处。</p>
-<p><strong>两者相同点：</strong></p>
-<ul>
-<li>echo 和 print 都是语言结构(官方文档解释为language construct)；</li>
-<li>echo 和 print 都是用来输出字符串的；</li>
-<li>当同时只有一个参数的时候，echo 和 print 后面的括号(parenthesis)都是可选的，即：echo ($argument1) 等价于 echo $argument1，print(argument)等价于print argument；</li>
-<li>echo 和 print 在输出之前，都会将参数的进行转换，尝试转换为字符串类型。</li>
-</ul>
-<p><strong>两者的区别</strong>：</p>
-<ul>
-<li>echo能接受N个字符串类型的参数(注意:有多个参数的时候，不能使用括号，即echo $arg1,$arg2是正确的，echo($arg1,$arg2)会导致解析错误)； print只能接收1个字符串类型的参数；</li>
-<li>echo没有返回值； print有返回值，其值永远为int类型的1。</li>
-<li>在这里引用PHP官方原文档的说明 : “The major differences to echo are that print only accepts a single argument and always returns 1.”</li>
-</ul>
+<p>———————————————————————————————————————</p>
+<p>echo，print，print_r，var_dump 的区别</p>
+<p><strong>1.echo</strong></p>
+<p>输出一个或者多个字符串。</p>
+<p><strong>2.print</strong></p>
+<p>和 echo 最主要的区别： print 仅支持一个参数，并总是返回 1。</p>
+<p><strong>3.print_r</strong></p>
+<p>打印关于变量的易于理解的信息,如果给出的是 string、integer 或 float，将打印变量值本身。如果给出的是 array，将会按照一定格式显示键和元素。object 与数组类似。 记住，print_r() 将把数组的指针移到最后边。使用 reset() 可让指针回到开始处。</p>
+<p><strong>4.var_dump</strong></p>
+<p>此函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。</p>
+<p><strong>5.var_dump 和 print_r 的区别</strong></p>
+<p>var_dump 返回表达式的类型与值而 print_r 仅返回结果，相比调试代码使用 var_dump 更便于阅读。</p>
 
       <div class="tags">
           <a href="/tags/php/" rel="tag"><i class="ic i-tag"></i> php</a>
@@ -221,7 +256,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2020-11-05 22:27:46" itemprop="dateModified" datetime="2020-11-05T22:27:46+08:00">2020-11-05</time>
+    <time title="Modified: 2020-11-07 21:34:21" itemprop="dateModified" datetime="2020-11-07T21:34:21+08:00">2020-11-07</time>
   </span>
 </div>
 
@@ -257,7 +292,7 @@ Yume Shoka = Hexo</title>
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">http://example.com/2020/11/05/echo和print语句/</a>
+    <a href="http://example.com/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">http://example.com/2020/11/07/php数据类型/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -276,22 +311,14 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="php语法和变量">
+  <a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="phpEOF(heredoc)使用说明">
   <span class="type">Previous Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>php语法和变量</h3>
-  </a>
-
-    </div>
-    <div class="item right">
-      
-
-  <a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwrdwyaj20zk0m8are.jpg" title="phpEOF(heredoc)使用说明">
-  <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>phpEOF(heredoc)使用说明</h3>
   </a>
 
+    </div>
+    <div class="item right">
     </div>
 </div>
 
@@ -308,7 +335,7 @@ Yume Shoka = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-5-echo-%E5%92%8C-print-%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.</span> <span class="toc-text">PHP 5 echo 和 print 语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-echo-%E5%92%8C-print-%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.1.</span> <span class="toc-text">PHP echo 和 print 语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-echo-%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.2.</span> <span class="toc-text">PHP echo 语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.3.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-number">1.4.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-print-%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.5.</span> <span class="toc-text">PHP print 语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-2"><span class="toc-number">1.6.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-3"><span class="toc-number">1.7.</span> <span class="toc-text">实例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">注意</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.</span> <span class="toc-text">PHP 字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%95%B4%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">PHP 整型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-number">4.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">PHP 浮点型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-2"><span class="toc-number">6.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%B8%83%E5%B0%94%E5%9E%8B"><span class="toc-number">7.</span> <span class="toc-text">PHP 布尔型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%95%B0%E7%BB%84"><span class="toc-number">8.</span> <span class="toc-text">PHP 数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-3"><span class="toc-number">9.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%AF%B9%E8%B1%A1"><span class="toc-number">10.</span> <span class="toc-text">PHP 对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-4"><span class="toc-number">11.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-NULL-%E5%80%BC"><span class="toc-number">12.</span> <span class="toc-text">PHP NULL 值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-5"><span class="toc-number">13.</span> <span class="toc-text">实例</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -381,12 +408,10 @@ Yume Shoka = Hexo</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -410,7 +435,16 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -437,6 +471,15 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
+    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
     <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
   </li>
 
@@ -446,25 +489,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -504,7 +529,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2020/11/05/echo和print语句/',
+    path: '2020/11/07/php数据类型/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"

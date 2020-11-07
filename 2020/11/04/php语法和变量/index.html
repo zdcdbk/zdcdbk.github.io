@@ -27,7 +27,7 @@
   <meta name="keywords" content="php" />
 
 
-<link rel="canonical" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/">
+<link rel="canonical" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/">
 
 
 
@@ -102,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -136,7 +136,7 @@ Yume Shoka = Hexo</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -155,20 +155,34 @@ Yume Shoka = Hexo</title>
 <p>————————————————————————————————</p>
 <p>PHP 脚本可以放在文档中的任何位置。</p>
 <p>PHP 脚本以 <strong><?php** 开始，以 **?></strong> 结束：</p>
-<p><code>&lt;?php</code><br><code>// PHP 代码</code><br><code>?&gt;</code></p>
+<p><code>&lt;?php // PHP 代码 ?&gt;</code></p>
 <p>PHP 文件的默认文件扩展名是 “.php”。</p>
 <p>PHP 文件通常包含 HTML 标签和一些 PHP 脚本代码。</p>
 <p>下面，我们提供了一个简单的 PHP 文件实例，它可以向浏览器输出文本 “Hello World!”：</p>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;!DOCTYPE html&gt;</code><br><code>&lt;html&gt;</code><br><code>&lt;body&gt;</code></p>
-<p><code>&lt;h1&gt;My first PHP page&lt;/h1&gt;</code></p>
-<p><code>&lt;?php</code><br><code>echo &quot;Hello World!&quot;;</code><br><code>?&gt;</code></p>
-<p><code>&lt;/body&gt;</code><br><code>&lt;/html&gt;</code></p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>`<!DOCTYPE html></p>
+<html>
+<body>
+
+<h1>My first PHP page</h1>
+
+<?php
+echo "Hello World!";
+?>
+
+</body>
+</html>`
+
 <p>PHP 中的每个代码行都必须以分号结束。分号是一种分隔符，用于把指令集区分开来。</p>
 <p>通过 PHP，有两种在浏览器输出文本的基础指令：<strong>echo</strong> 和 <strong>print</strong>。</p>
-<h2 id="PHP-中的注释"><a href="#PHP-中的注释" class="headerlink" title="PHP 中的注释"></a>PHP 中的注释</h2><p><code>&lt;!DOCTYPE html&gt;</code><br><code>&lt;html&gt;</code><br><code>&lt;body&gt;</code></p>
-<p><code>&lt;?php</code><br><code>// 这是 PHP 单行注释</code></p>
-<p><code>/*</code><br><code>这是</code><br><code>PHP 多行</code><br><code>注释</code><br><code>*/</code><br><code>?&gt;</code></p>
-<p><code>&lt;/body&gt;</code><br><code>&lt;/html&gt;</code></p>
+<h2 id="PHP-中的注释"><a href="#PHP-中的注释" class="headerlink" title="PHP 中的注释"></a>PHP 中的注释</h2><p>`<!DOCTYPE html></p>
+<html>
+<body>
+
+<p>**&lt;?php<br>// 这是 PHP 单行注释</p>
+<p>/*<br>这是<br>PHP 多行<br>注释<br>*/<br>?&gt;**</p>
+</body>
+</html>`
+
 <p><strong>// 这是 PHP 单行注释</strong></p>
 <p><strong>/*</strong><br><strong>这是</strong><br><strong>PHP 多行</strong><br><strong>注释</strong><br>*<strong>/</strong></p>
 <h1 id="PHP-变量"><a href="#PHP-变量" class="headerlink" title="PHP 变量"></a>PHP 变量</h1><p>变量是用于存储信息的”容器”：</p>
@@ -215,26 +229,26 @@ Yume Shoka = Hexo</title>
 </ul>
 <h2 id="局部和全局作用域"><a href="#局部和全局作用域" class="headerlink" title="局部和全局作用域"></a>局部和全局作用域</h2><p>在所有函数外部定义的变量，拥有全局作用域。除了函数外，全局变量可以被脚本中的任何部分访问，要在一个函数中访问一个全局变量，需要使用 global 关键字。</p>
 <p>在 PHP 函数内部声明的变量是局部变量，仅能在函数内部访问：</p>
-<h2 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code><br><code>$x=5; // 全局变量</code></p>
-<p><code>function myTest()</code><br><code>&#123;</code><br>  <code>$y=10; // 局部变量</code><br>  <code>echo &quot;&lt;p&gt;测试函数内变量:&lt;p&gt;&quot;;</code><br>  <code>echo &quot;变量 x 为: $x&quot;;</code><br>  <code>echo &quot;&lt;br&gt;&quot;;</code><br>  <code>echo &quot;变量 y 为: $y&quot;;</code><br><code>&#125;</code> </p>
-<p><code>myTest();</code></p>
-<p><code>echo &quot;&lt;p&gt;测试函数外变量:&lt;p&gt;&quot;;</code><br><code>echo &quot;变量 x 为: $x&quot;;</code><br><code>echo &quot;&lt;br&gt;&quot;;</code><br><code>echo &quot;变量 y 为: $y&quot;;</code><br><code>?&gt;</code></p>
+<h2 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h2><p>`&lt;?php<br>$x=5; // 全局变量</p>
+<p>function myTest()<br>{<br>  $y=10; // 局部变量<br>  echo “<p>测试函数内变量:<p>“;<br>  echo “变量 x 为: $x”;<br>  echo “<br>“;<br>  echo “变量 y 为: $y”;<br>} </p>
+<p>myTest();</p>
+<p>echo “<p>测试函数外变量:<p>“;<br>echo “变量 x 为: $x”;<br>echo “<br>“;<br>echo “变量 y 为: $y”;<br>?&gt;`</p>
 <p>在以上实例中 myTest() 函数定义了 $x 和 $y 变量。 $x 变量在函数外声明，所以它是全局变量 ， $y 变量在函数内声明所以它是局部变量。</p>
 <p>当我们调用myTest()函数并输出两个变量的值, 函数将会输出局部变量 $y 的值，但是不能输出 $x 的值，因为 $x 变量在函数外定义，无法在函数内使用，如果要在一个函数中访问一个全局变量，需要使用 global 关键字。</p>
 <p>然后我们在myTest()函数外输出两个变量的值，函数将会输出全局变量 $x 的值，但是不能输出 $y 的值，因为 $y 变量在函数中定义，属于局部变量。</p>
 <p><u>注意！！</u>你可以在不同函数中使用相同的变量名称，因为这些函数内定义的变量名是局部变量，只作用于该函数内。</p>
 <h2 id="PHP-global-关键字"><a href="#PHP-global-关键字" class="headerlink" title="PHP global 关键字"></a>PHP global 关键字</h2><p>global 关键字用于函数内访问全局变量。</p>
 <p>在函数内调用函数外定义的全局变量，我们需要在函数中的变量前加上 global 关键字：</p>
-<h2 id="实例-4"><a href="#实例-4" class="headerlink" title="实例"></a>实例</h2><p><code>&lt;?php</code></p>
-<p><code>$x=5;</code> </p>
-<p><code>$y=10;</code></p>
-<p><code>  function myTest()</code></p>
-<p><code> &#123;    global $x,$y;</code> </p>
-<p><code>   $y=$x+$y;</code> </p>
-<p><code>&#125;</code>  </p>
-<p><code>myTest();</code></p>
-<p><code> echo $y; // 输出 15</code></p>
-<p><code> ?&gt;</code></p>
+<h2 id="实例-4"><a href="#实例-4" class="headerlink" title="实例"></a>实例</h2><p>‘&lt;?php</p>
+<p> $x=5; </p>
+<p>$y=10;</p>
+<p>  function myTest()</p>
+<p> {    global $x,$y; </p>
+<p>   $y=$x+$y; </p>
+<p>}  </p>
+<p>myTest();</p>
+<p> echo $y; // 输出 15</p>
+<p> ?&gt;’</p>
 <p>PHP 将所有全局变量存储在一个名为 $GLOBALS[<em>index</em>] 的数组中。 <em>index</em> 保存变量的名称。这个数组可以在函数内部访问，也可以直接用来更新全局变量。上面的实例可以写成这样：</p>
 <p><code>&lt;?php </code></p>
 <p><code>$x=5;</code></p>
@@ -276,7 +290,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2020-11-07 21:41:49" itemprop="dateModified" datetime="2020-11-07T21:41:49+08:00">2020-11-07</time>
+    <time title="Modified: 2020-11-04 23:29:12" itemprop="dateModified" datetime="2020-11-04T23:29:12+08:00">2020-11-04</time>
   </span>
 </div>
 
@@ -312,7 +326,7 @@ Yume Shoka = Hexo</title>
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">http://example.com/2020/11/04/php语法/</a>
+    <a href="http://example.com/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">http://example.com/2020/11/04/php语法和变量/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -331,20 +345,20 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfb3vzhj20zk0m8wny.jpg" title="html简介">
+  <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew8gmvyj20zk0m87wh.jpg" title="php语法和变量">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>html简介</h3>
+  <h3>php语法和变量</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="php语法和变量">
+  <a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="echo和print语句">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>php语法和变量</h3>
+  <h3>echo和print语句</h3>
   </a>
 
     </div>
@@ -363,7 +377,7 @@ Yume Shoka = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">PHP 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A"><span class="toc-number">1.2.</span> <span class="toc-text">PHP 中的注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">2.</span> <span class="toc-text">PHP 变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-number">2.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E%E4%BB%A3%E6%95%B0%E7%B1%BB%E4%BC%BC"><span class="toc-number">2.2.</span> <span class="toc-text">与代数类似</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F-1"><span class="toc-number">2.3.</span> <span class="toc-text">PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%EF%BC%88%E5%A3%B0%E6%98%8E%EF%BC%89PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">2.4.</span> <span class="toc-text">创建（声明）PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-2"><span class="toc-number">2.5.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%98%AF%E4%B8%80%E9%97%A8%E5%BC%B1%E7%B1%BB%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="toc-number">2.6.</span> <span class="toc-text">PHP 是一门弱类型语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.7.</span> <span class="toc-text">PHP 变量作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%92%8C%E5%85%A8%E5%B1%80%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.8.</span> <span class="toc-text">局部和全局作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-3"><span class="toc-number">2.9.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-global-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">2.10.</span> <span class="toc-text">PHP global 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-4"><span class="toc-number">2.11.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Static-%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.12.</span> <span class="toc-text">Static 作用域</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">PHP 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">My first PHP page</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A"><span class="toc-number">2.1.</span> <span class="toc-text">PHP 中的注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">PHP 变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-number">3.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E%E4%BB%A3%E6%95%B0%E7%B1%BB%E4%BC%BC"><span class="toc-number">3.2.</span> <span class="toc-text">与代数类似</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F-1"><span class="toc-number">3.3.</span> <span class="toc-text">PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%EF%BC%88%E5%A3%B0%E6%98%8E%EF%BC%89PHP-%E5%8F%98%E9%87%8F"><span class="toc-number">3.4.</span> <span class="toc-text">创建（声明）PHP 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-2"><span class="toc-number">3.5.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E6%98%AF%E4%B8%80%E9%97%A8%E5%BC%B1%E7%B1%BB%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="toc-number">3.6.</span> <span class="toc-text">PHP 是一门弱类型语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.7.</span> <span class="toc-text">PHP 变量作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%92%8C%E5%85%A8%E5%B1%80%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.8.</span> <span class="toc-text">局部和全局作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-3"><span class="toc-number">3.9.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-global-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">3.10.</span> <span class="toc-text">PHP global 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-4"><span class="toc-number">3.11.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Static-%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.12.</span> <span class="toc-text">Static 作用域</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -436,12 +450,12 @@ Yume Shoka = Hexo</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -474,15 +488,6 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
@@ -492,16 +497,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
+    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
   </li>
 
       
@@ -511,6 +507,15 @@ Yume Shoka = Hexo</title>
 </div>
 
     <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
   </li>
 
       
@@ -529,6 +534,15 @@ Yume Shoka = Hexo</title>
 </div>
 
     <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
   </ul>
@@ -559,7 +573,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2020/11/04/php语法/',
+    path: '2020/11/04/php语法和变量/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"
