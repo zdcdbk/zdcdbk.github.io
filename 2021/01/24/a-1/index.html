@@ -24,13 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.2">
 
   
+  <meta name="keywords" content="MySQL" />
+
 
 <link rel="canonical" href="http://example.com/2021/01/24/a-1/">
 
 
 
   <title>
-a |
+MySQL的增删查改语句 |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,7 +60,7 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">a
+  <h1 itemprop="name headline">MySQL的增删查改语句
   </h1>
   
 <div class="meta">
@@ -100,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
         </ul>
       </div>
     </header>
@@ -149,12 +151,23 @@ Yume Shoka = Hexo</title>
   <div class="body md" itemprop="articleBody">
     
 
-    
+    <p>1)创建数据库<br>            1&gt;create database 数据库名;<br>            2&gt;选择要操作的数据库：USE 数据库;<br>            3&gt;查看数据库中所有的数据表show tables;<br>        2)删除数据库<br>            drop database 数据库名称;<br>        3)创建表(在哪个数据库里面创建表需要先使用use选择到那个要操作的数据库)<br>            1&gt;创建表<br>                create table 表名(<br>                    字段1名 字段1类型  列的约束条件,<br>                    字段2名 字段2类型  列的约束条件,<br>                    …<br>                            )<br>            2&gt;创建完表之后可以查看表的定义<br>               desc 表名;<br>            3&gt;查看创建表的SQL语句<br>               show create table 表名 \G<br>               \G选项使得记录能够按照字段竖向排列，以便更好地显示内容较长的记录，\G后面无需再加分号<br>        4)删除表<br>            drop table 表名;<br>        5)修改表<br>            1&gt;修改表的字段类型<br>               alter table 表名 modify [column] 字段定义  [first|after 字段名];<br>            2&gt;增加表字段<br>               alter table 表名 add [column] 字段定义 [first|after 字段名];<br>            3&gt;删除表字段<br>               alter table 表名 drop [column]  字段名;<br>            4&gt;字段改名<br>               alter table 表名 change [column] 旧的字段名 字段定义 [first|after 字段名];<br>               注：change与modify都可以修改表的定义，不同的是change后面需要接两次列名，不方便，但是优点是change可以修改字段名称<br>            5&gt;修改字段排列排序<br>               前面介绍的字段增加和修改语法(add/change/modify)中，都有一个可选项first|after 字段名,这个选择可以用来修改<br>               字段在表中的位置新增的字段默认是加载在表中最后位置，而change/modify 默认都不会改变字段的位置<br>               alter table t1 modify id2 tinyint first;<br>               alter table t1 modify id2 tinyint after id1;<br>               注意：change/first|after 字段名 这些关键字都是属于MySQL在标准SQL上的扩展，在其他的数据库上不一定适用<br>            6)更改表名<br>               alter table 表名 rename [to] 新的表名;</p>
+
+      <div class="tags">
+          <a href="/tags/MySQL/" rel="tag"><i class="ic i-tag"></i> MySQL</a>
+      </div>
   </div>
 
    <footer>
 
     <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-01-24 14:46:29" itemprop="dateModified" datetime="2021-01-24T14:46:29+08:00">2021-01-24</time>
+  </span>
 </div>
 
       
@@ -189,7 +202,7 @@ Yume Shoka = Hexo</title>
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2021/01/24/a-1/" title="a">http://example.com/2021/01/24/a-1/</a>
+    <a href="http://example.com/2021/01/24/a-1/" title="MySQL的增删查改语句">http://example.com/2021/01/24/a-1/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -208,7 +221,7 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="php常量">
+  <a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="php常量">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>php常量</h3>
@@ -252,7 +265,7 @@ Yume Shoka = Hexo</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -331,34 +344,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" title="php常量">php常量</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
       
@@ -376,7 +362,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/01/24/a-1/" title="a">a</a></span>
+    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
   </li>
 
       
@@ -394,15 +380,6 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
@@ -412,7 +389,43 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/24/a-1/" title="MySQL的增删查改语句">MySQL的增删查改语句</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
     <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/08/php%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83/" title="php类型比较">php类型比较</a></span>
   </li>
 
   </ul>
