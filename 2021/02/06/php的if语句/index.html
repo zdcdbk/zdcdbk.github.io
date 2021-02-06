@@ -24,12 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.2">
 
   
-
-<link rel="canonical" href="http://example.com/categories/">
-
+  <meta name="keywords" content="php" />
 
 
-  <title>AllCategory |
+<link rel="canonical" href="http://example.com/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/">
+
+
+
+  <title>
+php的if语句 |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -57,8 +60,19 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">AllCategory
+  <h1 itemprop="name headline">php的if语句
   </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-02-06 21:53:21">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-02-06T21:53:21+08:00">2021-02-06</time>
+  </span>
+</div>
+
 
           </div>
         </div>
@@ -88,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -114,10 +128,113 @@ Yume Shoka = Hexo</title>
       <div class="inner">
         <div id="content" class="pjax">
           
-  <div class="collapse wrap">
-    <h2 class="item title"><a href="/">Home</a> <small>/</small> No categories</h2>
+  <div class="article wrap">
     
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="zdc">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>1.if语句<br>        注意：我们if语句的表达式所控制的代码，最好用花括号括起来，哪怕就是一条语句也用花括号括起来！<br>               if语句可以嵌套，这是根据实际需求来的！<br>        1)单向条件<br>            if(表达式) 语句1;<br>            表达式的值为true 那么就执行语句1,否则就不执行！<br>            <code>$pass=60;</code><br>            <code>$a=40;</code><br>            <code>if($a&gt;=$pass)&#123;</code><br>                <code>echo &#39;恭喜，考试通过&#39;;</code><br>                <code>echo &#39;dwqdwqdq&#39;;</code><br>                <code>//.......各种其他语句！</code><br>            <code>&#125;</code><br>            <code>echo &#39;代码执行结束！&#39;;</code><br>        2)双向条件<br>            <code>$pass=60;</code><br>            <code>$a=40;</code><br>            <code>if($a&gt;=$pass)&#123;</code><br>                <code>echo &#39;恭喜你！考试通过啦！&#39;;</code><br>                <code>//.......</code><br>            <code>&#125;else&#123;</code><br>                <code>echo &#39;很遗憾，您的科目没有通过！&#39;;</code><br>                <code>//.......</code><br>            }<br>        3)多向条件<br>            <code>$a=84;</code><br>            <code>$grade1=60;//低于60不及格</code><br>            <code>$grade2=75;//及格</code><br>            <code>$grade3=85;//良好</code><br>            <code>if($a&lt;$grade1)&#123;</code><br>                <code>echo &#39;不及格&#39;;</code><br>            <code>&#125;elseif($a&lt;$grade2)&#123;</code><br>                <code>echo &#39;童鞋你及格了&#39;;</code><br>            <code>&#125;elseif($a&lt;$grade3)&#123;</code><br>                <code>echo &#39;良好！&#39;;</code><br>            <code>&#125;else&#123;</code><br>                <code>echo &#39;优秀&#39;;</code><br>            <code>&#125;</code></p>
+
+      <div class="tags">
+          <a href="/tags/php/" rel="tag"><i class="ic i-tag"></i> php</a>
+      </div>
   </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-02-06 21:55:04" itemprop="dateModified" datetime="2021-02-06T21:55:04+08:00">2021-02-06</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="zdc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="zdc Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="zdc PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>zdc <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" title="php的if语句">http://example.com/2021/02/06/php的if语句/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2021/01/31/php%E8%BF%90%E7%AE%97%E7%AC%A62%E3%80%81/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeybxm1pj20zk0m8niv.jpg" title="php运算符2">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>php运算符2</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
 
         </div>
         <div id="sidebar">
@@ -227,7 +344,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+    <span><a href="/2021/01/24/a-1/" title="MySQL的增删查改语句">MySQL的增删查改语句</a></span>
   </li>
 
       
@@ -236,25 +353,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" title="php常量">php常量</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/01/31/php%E8%BF%90%E7%AE%97%E7%AC%A62%E3%80%81/" title="php运算符2">php运算符2</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
   </li>
 
       
@@ -281,7 +380,34 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/01/24/a-1/" title="MySQL的增删查改语句">MySQL的增删查改语句</a></span>
+    <span><a href="/2020/11/08/php%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83/" title="php类型比较">php类型比较</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
       
@@ -299,16 +425,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
+    <span><a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" title="php运算符1">php运算符1</a></span>
   </li>
 
   </ul>
@@ -339,7 +456,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'categories/',
+    path: '2021/02/06/php的if语句/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"

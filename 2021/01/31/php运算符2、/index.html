@@ -102,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -151,7 +151,9 @@ Yume Shoka = Hexo</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>4.比较运算符<br>        概念：<br>        对操作数（按照比较运算符的要求,规则）进行比较<br>            如果比较出的结果满足比较运算符的要求那么结果就是true(真，成立，满足),否则就是false（假，不成立,不满足）<br>        PHP中规定：<br>            使用echo输出布尔类型值的时候<br>                echo true;它在页面中会输出1<br>                echo false;它会在页面中什么都不输出<br>                规定的，记住就好！所以说我们在测试的过程中如果需要输出布尔类型值的时候我们最好使用var_dump()来输出更明了的结果！<br>            1)== 值是否相等<br>            如果值相等则就是 true（真，成立）<br>            如果值不相等那么就是false（假，不成立）<br>            <code>$a=1;</code><br>            <code>$b=1;</code><br>            <code>var_dump($a==$b);//true</code><br>        2)=== 全等（值要相等，类型也要相等）<br>            如果两边操作数的值 全等那么就是true否则就是false<br>            <code>$a=11;</code><br>            <code>$b=&#39;11&#39;;</code><br>            <code>//var_dump($a==$b);//true</code><br>            <code>var_dump($a===$b);//false</code><br>        3)!= 值是否不相等<br>            如果两边操作数的值不相等那么就是true，否则就是false<br>            <code>$a=1;</code><br>            <code>$b=11;</code><br>            <code>var_dump($a!=$b);//true</code><br>        4)&lt;&gt; 同上<br>        5)!== 不全等<br>            如果两边的操作数不全等那么就是true，否则就是false<br>            <code>/*</code><br>            <code>$a=1111;</code><br>            <code>$b=2;</code><br>            <code>var_dump($a!=$b);//true</code><br>            <code>var_dump($a!==$b);//true</code><br>            <code>*/</code><br>            <code>$a=11;</code><br>            <code>$b=&#39;11&#39;;</code><br>            <code>var_dump($a!=$b);//false</code><br>            <code>var_dump($a!==$b);//true,$a不全等于$b</code><br>        6)&lt; 小于<br>            比较两边操作数的值，前面的是否小与后面的<br>            <code>$a=1;</code><br>            <code>$b=1;</code><br>            <code>var_dump($a&lt;$b);//false,$a小与$b这句话正确还是错误</code><br>        7)&gt; 大于<br>            <code>$a=10;</code><br>            <code>$b=1;</code><br>            <code>var_dump($a&gt;$b);</code><br>        8)&lt;= 小于等于<br>            <code>$a=1;</code><br>            <code>$b=1;</code><br>            <code>var_dump($a&lt;=$b);//$a小与等于$b就是true,否则就是false</code><br>        9)&gt;= 大于等于<br>            <code>$a=2;</code><br>            <code>$b=1;</code><br>            <code>var_dump($a&gt;=$b);//true</code><br>    5.逻辑运算符<br>        概念：<br>            对表达式进行逻辑运算，运算出的结果是布尔类型的值（true,false）<br>            要求：<br>                参与逻辑运算的表达式的值是布尔类型的值，如果不是布尔类型的值会被PHP自动转换成布尔类型的值，然后再参与运算！<br>        1)逻辑与<br>            and 或者 &amp;&amp;<br>                运算规则：<br>                    左右两边的表达式的值都为true的时候，运算的结果就是true<br>                    否则只要其中任意一个为false，运算的结果就是false;<br>                现实举例：<br>                    true 及格<br>                    false 不及格<br>                    左右两边的表达式就是我们要考试的科目;<br>                    要求：当语文和数学都及格的时候那么，最终的结果才能够通过(true),否则就是不通过(false)<br>            <code>$a=false;//语文</code><br>            <code>$b=true;//数学</code><br>            <code>var_dump($a &amp;&amp; $b);</code><br>            中间隐含一个问题：“短路”,运算符的优先级的问题！<br>            我们的程序语言的设计者认为：<br>                只要有逻辑运算符 （逻辑与，逻辑或）那么运算结果就是就是一个true或者false<br>                那个这个整个运行的过程就不重要了！<br>                当然短路问题并不会遇到太多，就算遇到也不会有什么影响！<br>        2)逻辑或<br>            or 或者 ||<br>                运算规则：<br>                    左右两边的表达式的值有一个为true，运算的结果就是true<br>                    ，只有当两边的值都是false的时候，结果才会是false<br>            <code>$a=false;//语文</code><br>            <code>$b=true;//数学</code><br>            <code>var_dump($a || $b);</code><br>            现实举例：<br>                要求：当语文和数学有一门及格那么最终的结果就是通过true<br>                中间隐含一个问题：“短路”,运算符的优先级的问题！<br>            我们的程序语言的设计者认为：<br>                只要有逻辑运算符 （逻辑与，逻辑或）那么运算结果就是就是一个true或者false<br>                那个这个整个运行的过程就不重要了！<br>                当然短路问题并不会遇到太多，就算遇到也不会有什么影响！<br>        3)逻辑异或<br>            xor<br>                运算规则：<br>                    左右两边的表达式的值不一样的时候结果就是true,如果一样那么运算的结果就是false<br>                <code>$a=false;</code><br>                <code>$b=false;</code><br>                <code>var_dump($a xor $b);</code><br>        4)逻辑非<br>            !<br>                运算规则：<br>                    将原来表达式的值否定掉，原来是true，那么结果就是false<br>                        原来是false，那么结果就是true<br>    6.其他运算符<br>        1) :<br>            三元运算<br>            格式：<br>                表达式1 :表达式2 : 表达式3;<br>                如果表达式1的值为true,那么就执行表达式2,否则那么就执行表达式3<br>                <code>$a=false :10 : 20;</code><br>                <code>echo $a;//20</code><br>        2)``<br>            可以把系统的命令放在里面执行！<br>            涉及到跨平台:<br>                <code>$a=</code>ipconfig<code>;</code><br>                <code>$b=</code>ifconfig<code>;</code><br>                <code>var_dump($b);</code><br>        3)@<br>            屏蔽表达式可能发生错误！<br>            echo @$a;<br>            当然，实际在哪些地方应用，我们用到大家就知道了！<br>        4)=&gt;<br>        5)-&gt;<br>        6)instanceof<br>    8.运算符的优先级<br>        优先级的概念：<br>            谁的优先级别高就先算谁！<br>        结合方向：<br>            规定了从那个方向开始算的问题！<br>        优先级归纳:<br>            1)[无]递增递减<br>            2)[右]逻辑非!<br>            3)[左]乘，除，取余<br>            4)[左]加，减，字符串连接符<br>            5)[无]包含大于号或者小于号的比较运算符<br>            6)[无]不包含大于号或者小于号的比较运算符<br>            7)[左]逻辑与&amp;&amp;<br>            8)[左]逻辑或||<br>            9)[左]? :<br>            10)[右]赋值运算符<br>            12)[左 ]逻辑异或xor<br>        圆括号的作用：<br>            用圆括号可以将表达式里面的某一块看成一个整体！<br>        *使用括号可以增强代码的可读性。<br>            哪怕有的地方不需要加括号你也可以加上以增加可读性！</p>
+    <p>4.比较运算符<br>        概念：<br>        对操作数（按照比较运算符的要求,规则）进行比较<br>            如果比较出的结果满足比较运算符的要求那么结果就是true(真，成立，满足),否则就是false（假，不成立,不满足）<br>        PHP中规定：<br>            使用echo输出布尔类型值的时候<br>                echo true;它在页面中会输出1<br>                echo false;它会在页面中什么都不输出<br>                规定的，记住就好！所以说我们在测试的过程中如果需要输出布尔类型值的时候我们最好使用var_dump()来输出更明了的结果！<br>            1)== 值是否相等<br>            如果值相等则就是 true（真，成立）<br>            如果值不相等那么就是false（假，不成立）<br>            $a=1;<br>            $b=1;<br>            var_dump($a==$b);//true<br>        2)=== 全等（值要相等，类型也要相等）<br>            如果两边操作数的值 全等那么就是true否则就是false<br>            $a=11;<br>            $b=’11’;<br>            //var_dump($a==$b);//true<br>            var_dump($a===$b);//false<br>        3)!= 值是否不相等<br>            如果两边操作数的值不相等那么就是true，否则就是false<br>            $a=1;<br>            $b=11;<br>            var_dump($a!=$b);//true<br>        4)&lt;&gt; 同上<br>        5)!== 不全等<br>            如果两边的操作数不全等那么就是true，否则就是false<br>            /*<br>            $a=1111;<br>            $b=2;<br>            var_dump($a!=$b);//true<br>            var_dump($a!==$b);//true<br>            */<br>            $a=11;<br>            $b=’11’;<br>            var_dump($a!=$b);//false<br>            var_dump($a!==$b);//true,$a不全等于$b<br>        6)&lt; 小于<br>            比较两边操作数的值，前面的是否小与后面的<br>            $a=1;<br>            $b=1;<br>            var_dump($a&lt;$b);//false,$a小与$b这句话正确还是错误<br>        7)&gt; 大于<br>            $a=10;<br>            $b=1;<br>            var_dump($a&gt;$b);<br>        8)&lt;= 小于等于<br>            $a=1;<br>            $b=1;<br>            var_dump($a&lt;=$b);//$a小与等于$b就是true,否则就是false<br>        9)&gt;= 大于等于<br>            $a=2;<br>            $b=1;<br>            var_dump($a&gt;=$b);//true<br>    5.逻辑运算符<br>        概念：<br>            对表达式进行逻辑运算，运算出的结果是布尔类型的值（true,false）<br>            要求：<br>                参与逻辑运算的表达式的值是布尔类型的值，如果不是布尔类型的值会被PHP自动转换成布尔类型的值，然后再参与运算！<br>        1)逻辑与<br>            and 或者 &amp;&amp;<br>                运算规则：<br>                    左右两边的表达式的值都为true的时候，运算的结果就是true<br>                    否则只要其中任意一个为false，运算的结果就是false;<br>                现实举例：<br>                    true 及格<br>                    false 不及格<br>                    左右两边的表达式就是我们要考试的科目;<br>                    要求：当语文和数学都及格的时候那么，最终的结果才能够通过(true),否则就是不通过(false)<br>            $a=false;//语文<br>            $b=true;//数学<br>            var_dump($a &amp;&amp; $b);<br>            中间隐含一个问题：“短路”,运算符的优先级的问题！<br>            我们的程序语言的设计者认为：<br>                只要有逻辑运算符 （逻辑与，逻辑或）那么运算结果就是就是一个true或者false<br>                那个这个整个运行的过程就不重要了！<br>                当然短路问题并不会遇到太多，就算遇到也不会有什么影响！<br>        2)逻辑或<br>            or 或者 ||<br>                运算规则：<br>                    左右两边的表达式的值有一个为true，运算的结果就是true<br>                    ，只有当两边的值都是false的时候，结果才会是false<br>            $a=false;//语文<br>            $b=true;//数学<br>            var_dump($a || $b);<br>            现实举例：<br>                要求：当语文和数学有一门及格那么最终的结果就是通过true<br>                中间隐含一个问题：“短路”,运算符的优先级的问题！<br>            我们的程序语言的设计者认为：<br>                只要有逻辑运算符 （逻辑与，逻辑或）那么运算结果就是就是一个true或者false<br>                那个这个整个运行的过程就不重要了！<br>                当然短路问题并不会遇到太多，就算遇到也不会有什么影响！<br>        3)逻辑异或<br>            xor<br>                运算规则：<br>                    左右两边的表达式的值不一样的时候结果就是true,如果一样那么运算的结果就是false<br>                $a=false;<br>                $b=false;<br>                var_dump($a xor $b);<br>        4)逻辑非<br>            !<br>                运算规则：<br>                    将原来表达式的值否定掉，原来是true，那么结果就是false<br>                        原来是false，那么结果就是true<br>    6.其他运算符<br>        1) :<br>            三元运算<br>            格式：<br>                表达式1 :表达式2 : 表达式3;<br>                如果表达式1的值为true,那么就执行表达式2,否则那么就执行表达式3<br>                $a=false :10 : 20;<br>                echo $a;//20<br>2)``</p>
+<p>可以把系统的命令放在里面执行！<br>            涉及到跨平台:<br>                $a=ipconfig;<br>                $b=ifconfig;<br>                var_dump($b);    </p>
+<p>​    3)@<br>​            屏蔽表达式可能发生错误！<br>​            echo @$a;<br>​<br>​        4)=&gt;<br>​        5)-&gt;<br>​        6)instanceof<br>​    8.运算符的优先级<br>​        优先级的概念：<br>​            谁的优先级别高就先算谁！<br>​        结合方向：<br>​            规定了从那个方向开始算的问题！<br>​        优先级归纳:<br>​            1)[无]递增递减<br>​            2)[右]逻辑非!<br>​            3)[左]乘，除，取余<br>​            4)[左]加，减，字符串连接符<br>​            5)[无]包含大于号或者小于号的比较运算符<br>​            6)[无]不包含大于号或者小于号的比较运算符<br>​            7)[左]逻辑与&amp;&amp;<br>​            8)[左]逻辑或||<br>​            9)[左]? :<br>​            10)[右]赋值运算符<br>​            12)[左 ]逻辑异或xor<br>​        圆括号的作用：<br>​            用圆括号可以将表达式里面的某一块看成一个整体！<br>​        *使用括号可以增强代码的可读性。<br>​            哪怕有的地方不需要加括号你也可以加上以增加可读性！</p>
 
       <div class="tags">
           <a href="/tags/php/" rel="tag"><i class="ic i-tag"></i> php</a>
@@ -166,7 +168,7 @@ Yume Shoka = Hexo</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2021-01-31 21:08:56" itemprop="dateModified" datetime="2021-01-31T21:08:56+08:00">2021-01-31</time>
+    <time title="Modified: 2021-01-31 21:23:26" itemprop="dateModified" datetime="2021-01-31T21:23:26+08:00">2021-01-31</time>
   </span>
 </div>
 
@@ -221,7 +223,7 @@ Yume Shoka = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew28b65j20zk0m8hdt.jpg" title="php运算符1">
+  <a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="php运算符1">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>php运算符1</h3>
@@ -229,6 +231,14 @@ Yume Shoka = Hexo</title>
 
     </div>
     <div class="item right">
+      
+
+  <a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhfehz7j20zk0m8u0x.jpg" title="php的if语句">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>php的if语句</h3>
+  </a>
+
     </div>
 </div>
 
@@ -259,7 +269,7 @@ Yume Shoka = Hexo</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">13</span>
+        <span class="count">14</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -317,10 +327,12 @@ Yume Shoka = Hexo</title>
 
   <ul id="quick">
     <li class="prev pjax">
+        <a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
+        <a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -344,7 +356,25 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
+    <span><a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" title="php运算符1">php运算符1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/31/php%E8%BF%90%E7%AE%97%E7%AC%A62%E3%80%81/" title="php运算符2">php运算符2</a></span>
   </li>
 
       
@@ -354,6 +384,42 @@ Yume Shoka = Hexo</title>
 </div>
 
     <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" title="php常量">php常量</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/08/php%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83/" title="php类型比较">php类型比较</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
   </li>
 
       
@@ -372,60 +438,6 @@ Yume Shoka = Hexo</title>
 </div>
 
     <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" title="php运算符1">php运算符1</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/01/31/php%E8%BF%90%E7%AE%97%E7%AC%A62%E3%80%81/" title="php运算符2">php运算符2</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
   </ul>
