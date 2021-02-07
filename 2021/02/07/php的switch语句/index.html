@@ -24,12 +24,16 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.2">
 
   
-
-<link rel="canonical" href="http://example.com/tags/MySQL/">
-
+  <meta name="keywords" content="php" />
 
 
-  <title>Tag: MySQL | Yume Shoka = Hexo</title>
+<link rel="canonical" href="http://example.com/2021/02/07/php%E7%9A%84switch%E8%AF%AD%E5%8F%A5/">
+
+
+
+  <title>
+php的switch语句 |
+Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -56,9 +60,19 @@
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
-    Posted with tag "MySQL"
+  <h1 itemprop="name headline">php的switch语句
   </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-02-07 21:16:12">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-02-07T21:16:12+08:00">2021-02-07</time>
+  </span>
+</div>
+
 
           </div>
         </div>
@@ -88,12 +102,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
           <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
         </ul>
       </div>
     </header>
@@ -114,38 +128,123 @@
       <div class="inner">
         <div id="content" class="pjax">
           
-  <div class="collapse wrap">
-    <h2 class="item header">
-      <a href="/tags">All</a>
-      <small>/</small>
-      MySQL
-      <small>Tag</small>
-    </h2>
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
 
-        <article class="item normal" itemscope itemtype="http://schema.org/Article">
-          <div class="meta">
-            <time itemprop="dateCreated"
-                  datetime="2021-01-24T13:05:54+08:00"
-                  content="2021-01-24">
-              2021-01-24
-            </time>
-          </div>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/php%E7%9A%84switch%E8%AF%AD%E5%8F%A5/">
 
-          <div class="title">
-              <a href="/2021/01/24/a-1/" itemprop="url">
-                <span itemprop="name">MySQL的增删查改语句</span>
-              </a>
-          </div>
-        </article>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="zdc">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>switch语句<br>        <code>switch(表达式)&#123;</code><br>            <code>case 值 1://case相当于==</code><br>                <code>语句块1;</code><br>                <code>break;</code><br>            <code>case 值 2:</code><br>                <code>语句块2;</code><br>                <code>break;</code><br>            <code>.......</code><br>            <code>default:</code><br>                <code>语句块n</code><br>        }</p>
+<pre><code>    注意点：
+        1)表达式的值最好是整形或者字符串！
+        2)不要忘记break语句！来跳出switch语句！每个case语句后面都加上break
+        3)如果某个case语句后面并没有接语句块，那么就说明这个语句块的内容是同下！
+        4)case后面的语句块是不需要&#123;&#125;括起来的</code></pre>
+
+      <div class="tags">
+          <a href="/tags/php/" rel="tag"><i class="ic i-tag"></i> php</a>
+      </div>
   </div>
 
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-02-07 21:22:28" itemprop="dateModified" datetime="2021-02-07T21:22:28+08:00">2021-02-07</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="zdc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="zdc Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="zdc PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>zdc <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/02/07/php%E7%9A%84switch%E8%AF%AD%E5%8F%A5/" title="php的switch语句">http://example.com/2021/02/07/php的switch语句/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
   
 
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitht3xtj20zk0m8k5v.jpg" title="php的if语句">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>php的if语句</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
 
 
         </div>
         <div id="sidebar">
           
+
 <div class="inner">
 
   <div class="panels">
@@ -232,6 +331,7 @@
   </ul>
 </div>
 
+
         </div>
         <div class="dimmer"></div>
       </div>
@@ -249,7 +349,25 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
+    <span><a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" title="php的if语句">php的if语句</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/24/a-1/" title="MySQL的增删查改语句">MySQL的增删查改语句</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -267,7 +385,16 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
+    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
   </li>
 
       
@@ -285,34 +412,7 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/02/07/php%E7%9A%84switch%E8%AF%AD%E5%8F%A5/" title="php的switch语句">php的switch语句</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" title="php的if语句">php的if语句</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/01/31/php%E8%BF%90%E7%AE%97%E7%AC%A62%E3%80%81/" title="php运算符2">php运算符2</a></span>
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
   </li>
 
       
@@ -330,7 +430,7 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
+    <span><a href="/2021/01/30/php%E8%BF%90%E7%AE%97%E7%AC%A6/" title="php运算符1">php运算符1</a></span>
   </li>
 
   </ul>
@@ -361,7 +461,7 @@
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'tags/MySQL/',
+    path: '2021/02/07/php的switch语句/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"
