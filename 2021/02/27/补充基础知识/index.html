@@ -24,15 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.2">
 
   
+  <meta name="keywords" content="sqli-labs" />
 
-<link rel="canonical" href="http://example.com/archives/2020/10/">
+
+<link rel="canonical" href="http://example.com/2021/02/27/%E8%A1%A5%E5%85%85%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
 
 
   <title>
-2020 Y / 10 M -
-
-Archive |
+补充基础知识 |
 Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,9 +60,19 @@ Yume Shoka = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
-      Posted on "2020Y10M"
+  <h1 itemprop="name headline">补充基础知识
   </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-02-27 19:31:11">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-02-27T19:31:11+08:00">2021-02-27</time>
+  </span>
+</div>
+
 
           </div>
         </div>
@@ -92,12 +102,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
           <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -118,36 +128,125 @@ Yume Shoka = Hexo</title>
       <div class="inner">
         <div id="content" class="pjax">
           
-  <div class="collapse wrap">
-    <h2 class="item header">
-          <a href="/archives">All</a> <small>/</small> <a href="/archives/2020">2020 Y</a> <small>/</small> 10 M<small>Archive</small>
-        
-    </h2>
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
 
-        <article class="item normal" itemscope itemtype="http://schema.org/Article">
-          <div class="meta">
-            <time itemprop="dateCreated"
-                  datetime="2020-10-07T20:21:08+08:00"
-                  content="2020-10-07">
-              10-07
-            </time>
-          </div>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/27/%E8%A1%A5%E5%85%85%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
-          <div class="title">
-              <a href="/2020/10/07/hello-world/" itemprop="url">
-                <span itemprop="name">Hello World</span>
-              </a>
-          </div>
-        </article>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="zdc">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <ol>
+<li>left()函数：  left(database(),1)=‘s’<br>left(a,b)从左侧截取a的前b位，正确则返回1，错误则返回0</li>
+<li>regexp函数：select user() regexp ‘r’                 user()的结果是root，regexp为匹配root的正则表达式</li>
+<li>like函数： select user() like ‘ro%’                        匹配与regexp相似。</li>
+<li>substr(a,b,c)   select substr() XXXX<br>substr(a,b,c)从位置b开始，截取a字符串c位长度</li>
+<li>ascii()                                      将某个字符串转化为ascii值  </li>
+<li>chr(数字)   或者是ord(‘字母’)    使用python中的两个函数可以判断当前的ascii值是多少<br>对于security数据库：<br>select left(database(),1)=‘s’;   前1位是否是s<br>select database() regexp ‘s’;  匹配第一个字符是否是 s<br>select database() like ‘s%’;     匹配第一个字符是否是 s<br>select substr((select database()),1,1)=’s’; 匹配第一个字符是否是 s<br>select substr((select database()),1,3)= ‘sec’; 匹配前三个个字符是否是 sec<br>select ascii(substr((select database()),1,1));    直接回显115  或者是：<br>select ascii(substr((select database()),1,1)) &gt; 110;  如果大于110，就会返回1，否则返回0.</li>
+</ol>
+
+      <div class="tags">
+          <a href="/tags/sqli-labs/" rel="tag"><i class="ic i-tag"></i> sqli-labs</a>
+      </div>
   </div>
 
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-02-27 19:32:57" itemprop="dateModified" datetime="2021-02-27T19:32:57+08:00">2021-02-27</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="zdc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="zdc Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="zdc PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>zdc <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/02/27/%E8%A1%A5%E5%85%85%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="补充基础知识">http://example.com/2021/02/27/补充基础知识/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
   
 
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2021/02/25/less1~less4/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="less1~less4">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>less1~less4</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
 
 
         </div>
         <div id="sidebar">
           
+
 <div class="inner">
 
   <div class="panels">
@@ -234,6 +333,7 @@ Yume Shoka = Hexo</title>
   </ul>
 </div>
 
+
         </div>
         <div class="dimmer"></div>
       </div>
@@ -251,7 +351,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/11/07/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="php数据类型">php数据类型</a></span>
+    <span><a href="/2020/11/16/php%E5%B8%B8%E9%87%8F/" title="php常量">php常量</a></span>
   </li>
 
       
@@ -260,52 +360,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/01/24/a-1/" title="MySQL的增删查改语句">MySQL的增删查改语句</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/02/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/08/php%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83/" title="php类型比较">php类型比较</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/03/html%E7%AE%80%E4%BB%8B/" title="html简介">html简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/02/25/less1~less4/" title="less1~less4">less1~less4</a></span>
+    <span><a href="/2020/11/05/echo%E5%92%8Cprint%E8%AF%AD%E5%8F%A5/" title="echo和print语句">echo和print语句</a></span>
   </li>
 
       
@@ -323,6 +378,51 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
+    <span><a href="/2021/02/15/php%E5%BE%AA%E7%8E%AF%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5/" title="php循环执行语句">php循环执行语句</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95/" title="php语法和变量">php语法和变量</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/10/07/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/02/27/%E8%A1%A5%E5%85%85%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="补充基础知识">补充基础知识</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/11/04/php%E8%AF%AD%E6%B3%95%E5%92%8C%E5%8F%98%E9%87%8F/" title="php语法和变量">php语法和变量</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
     <span><a href="/2020/11/06/phpEOF(heredoc)%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="phpEOF(heredoc)使用说明">phpEOF(heredoc)使用说明</a></span>
   </li>
 
@@ -332,7 +432,7 @@ Yume Shoka = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/02/06/php%E7%9A%84if%E8%AF%AD%E5%8F%A5/" title="php的if语句">php的if语句</a></span>
+    <span><a href="/2021/02/07/php%E7%9A%84switch%E8%AF%AD%E5%8F%A5/" title="php的switch语句">php的switch语句</a></span>
   </li>
 
   </ul>
@@ -363,7 +463,7 @@ Yume Shoka = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'archives/2020/10/',
+    path: '2021/02/27/补充基础知识/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"
